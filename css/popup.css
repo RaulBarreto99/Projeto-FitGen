@@ -1,0 +1,127 @@
+:root {
+    --primary-color: #1e94d8;
+    --primary-text-color: #ffffff;
+    --secundary-text-color: #000000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popupLogin {
+    width: 80%;
+    height: 50%;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 22px;
+    background-color: var(--primary-text-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    border-radius: 10px;
+    border: 1px solid var(--secundary-text-color);
+}
+
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+}
+
+.popupContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.popupTitle{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.popupTitle > p{
+    font-size: 4em;
+    font-family: fantasy;
+    font-style: oblique;
+    color: var(--secundary-text-color);
+    letter-spacing: 1px;
+}
+
+.popupTitle > p > span{
+    font-family: fantasy;
+    font-style: oblique;
+    color: var(--primary-color);
+}
+
+.popupButtons{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.popupButtons > .input{
+    width: 80%;
+    height: 3.5em;
+    border: 1px solid var(--secundary-text-color);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+input::placeholder {
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+}
+
+.popupButtons > .btnEnter{
+    width: 80%;
+    height: 4em;
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.450);
+    border: none;
+}
+
+.popupButtons > .btnEnter > span{
+    font-size: 17px;
+}
+
+hr{
+    width: 70%;
+}
+
+.popupClose {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    top: 88%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--primary-text-color);
+    z-index: 1000;
+    text-align: center;
+    font-size: 26px;
+    font-family: cursive;
+    border-radius: 30px;
+}

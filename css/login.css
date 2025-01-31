@@ -1,0 +1,82 @@
+:root {
+    --primary-color: #1e94d8;
+    --primary-text-color: #ffffff;
+    --secundary-text-color: #000000;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/vertical\ image\ of\ a\ gym\ showing\ weights\ in\ black\ and\ white.png);
+}
+
+.divBackground{
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color);
+    opacity: 85%;
+    
+}
+
+.divTitle{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTitle > p{
+    font-size: 4em;
+    font-family: fantasy;
+    font-style: oblique;
+    color: var(--secundary-text-color);
+    letter-spacing: 1px;
+}
+
+.divTitle > p > span{
+    font-family: fantasy;
+    font-style: oblique;
+    color: var(--primary-text-color);
+}
+
+.divButtons{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.divButtons > button{
+    width: 80%;
+    height: 4em;
+    background-color: var(--secundary-text-color);
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    border: 1px solid var(--secundary-text-color);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.267);
+}
+
+.divButtons > button > span {
+    font-size: 17px;
+}
+
+.divButtons > p{
+    color: var(--primary-text-color);
+    font-size: 17px;
+    margin-top: 12px;
+}
