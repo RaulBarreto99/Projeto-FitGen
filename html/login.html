@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/popup.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="shortcut icon" href="../images/icons8-gym-50.png" type="image/png">
+    <link rel="stylesheet" href="../css/popup-register.css">
     <title>Login</title>
 </head>
 
@@ -21,7 +22,7 @@
 
             <div class="divButtons">
                 <button id="btnLogin"><span>Iniciar sessão / Login</span></button>
-                <p>Registrar-se</p>
+                <p id="btnRegister">Registrar-se</p>
             </div>
 
         </div>
@@ -50,7 +51,46 @@
         <div class="popupClose">x</div>
 
     </div>
+
+    <div class="popup-overlay-register">
+        <div class="popupLogin-register">
+            <div class="popupContent-register">
+
+                <div class="popupTitle-register">
+                    <p><span>FIT</span>GEN</p>
+                </div>
+
+                <hr>
+
+                <div class="popupButtons-register">
+                    <input type="text" name="firstName" id="firstName" class="input-register" placeholder="Nome">
+
+                    <input type="text" name="lastName" id="lastName" class="input-register" placeholder="Sobrenome">
+
+                    <input type="email" name="email" id="email" class="input-register" placeholder="E-mail">
+
+                    <div class="divSexo">
+                        <p>Sexo:</p>
+
+                        <label for="sexo"><input type="radio" name="sexo" id="sexMasc" class="radio" value="Masculino">Masculino</label>
+
+                    <label for="sexo"><input type="radio" name="sexo" id="sexFem" class="radio" value="Feminino">Feminino</label>
+                    </div>
+
+                    <input type="password" name="password" id="password" class="input-register" placeholder="senha">
+
+                    <button class="btnEnter-register"><span>Entrar</span></button>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="popupClose-register">x</div>
+
+    </div>
 </body>
+
 </html>
 
 <script src="../js/login.js"></script>
