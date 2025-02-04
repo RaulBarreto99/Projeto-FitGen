@@ -1,0 +1,161 @@
+:root {
+    --primary-color: #1e94d8;
+    --primary-text-color: #ffffff;
+    --secundary-text-color: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: var(--secundary-text-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.divMessage {
+    width: 100%;
+    height: 23%;
+    color: var(--primary-text-color);
+    text-align: -webkit-center;
+    align-content: center;
+    
+}
+
+.divMessage > h1{
+    width: 80%;
+    margin-bottom: 20px;
+    font-size: 45px;
+}
+
+.divMessage > .title{
+    width: 80%;
+    font-size: 15px;
+
+}
+
+.divMessage > .text{
+    width: 70%;
+    font-size: 15px;
+    text-align: left;
+}
+
+.divMessage > p > b{
+    color: var(--primary-color) !important;
+}
+
+.divGenerate {
+    width: 100%;
+    height: 20%;
+    text-align: -webkit-center;
+    align-content: center;
+}
+
+.btnTrainingGenerate{
+    width: 85%;
+    height: 10em;
+    background-image: url(../images/imgGerarTreino.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.overBlack{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 75%;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.btnTrainingGenerate > .overBlack > .btnTitle{
+    font-size: 30px;
+    padding: 10px;
+    height: 40%;
+}
+
+.btnTitle{
+    font-size: 17px;
+    padding: 10px;
+    height: 40%;
+}
+
+.btnText{
+    font-size: 13px;
+    padding: 10px;
+    height: 60%;
+}
+
+.divOptions {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.btnExerciseList{
+    width: 40%;
+    height: 12em;
+    background-image: url(../images/imgGerarTreino.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.btnIMC{
+    width: 40%;
+    height: 12em;
+    background-image: url(../images/imgGerarTreino.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.btnAddTraining{
+    width: 40%;
+    height: 12em;
+    background-image: url(../images/imgGerarTreino.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-text-color);
+}
+
+.btnStopWatch{
+    width: 40%;
+    height: 12em;
+    background-image: url(../images/imgGerarTreino.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--primary-text-color);
+    border-radius: 10px;
+    border: 1px solid var(--primary-text-color);
+}
+
+footer {
+    width: 100%;
+    height: 7%;
+    background-color: #1e94d8;
+}
