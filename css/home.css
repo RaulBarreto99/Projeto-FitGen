@@ -19,34 +19,36 @@ main {
     justify-content: space-between;
 }
 
+
+
 .divMessage {
     width: 100%;
     height: 23%;
     color: var(--primary-text-color);
     text-align: -webkit-center;
     align-content: center;
-    
+
 }
 
-.divMessage > h1{
+.divMessage>h1 {
     width: 80%;
     margin-bottom: 20px;
     font-size: 45px;
 }
 
-.divMessage > .title{
+.divMessage>.title {
     width: 80%;
     font-size: 15px;
 
 }
 
-.divMessage > .text{
+.divMessage>.text {
     width: 70%;
     font-size: 15px;
     text-align: left;
 }
 
-.divMessage > p > b{
+.divMessage>p>b {
     color: var(--primary-color) !important;
 }
 
@@ -57,9 +59,9 @@ main {
     align-content: center;
 }
 
-.btnTrainingGenerate{
-    width: 85%;
-    height: 10em;
+.btnTrainingGenerate {
+    width: 90%;
+    height: 10.5em;
     background-image: url(../images/imgGerarTreino.png);
     background-size: cover;
     background-position: center;
@@ -69,7 +71,7 @@ main {
     border: 1px solid var(--primary-text-color);
 }
 
-.overBlack{
+.overBlack {
     width: 100%;
     height: 100%;
     background-color: #000000;
@@ -80,19 +82,19 @@ main {
     justify-content: space-between;
 }
 
-.btnTrainingGenerate > .overBlack > .btnTitle{
+.btnTrainingGenerate>.overBlack>.btnTitle {
     font-size: 30px;
     padding: 10px;
     height: 40%;
 }
 
-.btnTitle{
+.btnTitle {
     font-size: 17px;
     padding: 10px;
     height: 40%;
 }
 
-.btnText{
+.btnText {
     font-size: 13px;
     padding: 10px;
     height: 60%;
@@ -106,10 +108,10 @@ main {
     justify-content: space-around;
 }
 
-.btnExerciseList{
+.btnExerciseList {
     width: 40%;
     height: 12em;
-    background-image: url(../images/imgGerarTreino.png);
+    background-image: url(../images/uma\ imagem\ para\ uma\ lista\ de\ exercícios.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -118,10 +120,10 @@ main {
     border: 1px solid var(--primary-text-color);
 }
 
-.btnIMC{
+.btnIMC {
     width: 40%;
     height: 12em;
-    background-image: url(../images/imgGerarTreino.png);
+    background-image: url(../images/balança\ de\ peso.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -130,10 +132,10 @@ main {
     border: 1px solid var(--primary-text-color);
 }
 
-.btnAddTraining{
+.btnAddTraining {
     width: 40%;
     height: 12em;
-    background-image: url(../images/imgGerarTreino.png);
+    background-image: url(../images/imagem\ para\ adicionar\ exercício.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,20 +144,14 @@ main {
     border: 1px solid var(--primary-text-color);
 }
 
-.btnStopWatch{
+.btnStopWatch {
     width: 40%;
     height: 12em;
-    background-image: url(../images/imgGerarTreino.png);
+    background-image: url(../images/cronometro.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: var(--primary-text-color);
     border-radius: 10px;
     border: 1px solid var(--primary-text-color);
-}
-
-footer {
-    width: 100%;
-    height: 7%;
-    background-color: #1e94d8;
 }

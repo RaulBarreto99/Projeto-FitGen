@@ -19,13 +19,25 @@
                 document.getElementById('importHeader').innerHTML = data;
             });
     }
-    window.onload = loadHeader;
+
+    //script para adicionar o footer
+    function loadFooter() {
+        fetch('footer.html')
+            .then(resp => resp.text())
+            .then(data => {
+                document.getElementById('importFooter').innerHTML = data;
+            });
+    }
+
+    window.onload = loadHeader();
+    window.onload = loadFooter();
 </script>
 
 <body>
     <main>
 
         <header id="importHeader"></header>
+        <div class="fakeHeader"></div>
 
         <div class="divMessage">
             <h1>BEM VINDO!</h1>
@@ -49,7 +61,8 @@
                         Gerar Treino
                     </p>
                     <p class="btnText">
-                        Gere seu trenio aleatóriamente, escolhendo o músculo que deseja exercitar, o treino será baseado na Lista de exercícios e em seus exercicios personalizados.
+                        Gere seu trenio aleatóriamente, escolhendo o músculo que deseja exercitar, o treino será baseado
+                        na Lista de exercícios e em seus exercicios personalizados.
                     </p>
                 </div>
 
@@ -93,7 +106,8 @@
                         Adicionar Treino
                     </p>
                     <p class="btnText">
-                        Adicione um exercício que você curta, ele será adicionado em suas opções de treinos e avaliado para a lista de execicios global. 
+                        Adicione um exercício que você curta, ele será adicionado em suas opções de treinos e avaliado
+                        para a lista de execicios global.
                     </p>
                 </div>
 
@@ -105,7 +119,8 @@
                         Cronometro
                     </p>
                     <p class="btnText">
-                        Controle com precisão seu tempo, utilizando de diferentes tipos de ritmos e também ritmos convêncionais.
+                        Controle com precisão seu tempo, utilizando de diferentes tipos de ritmos e também ritmos
+                        convêncionais.
                     </p>
                 </div>
 
@@ -113,10 +128,14 @@
 
         </div>
 
-        <footer></footer>
+        <footer id="importFooter"></footer>
+
+        <div class="fakeFooter"></div>
 
     </main>
 
 </body>
 
 </html>
+
+<script src="../js/home.js"></script>

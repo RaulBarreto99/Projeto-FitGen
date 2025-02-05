@@ -25,3 +25,9 @@ $('.popupClose-register').click(function () {
     $('.popup-overlay-register').css('display', 'none');
     $('.popupLogin-register').css('display', 'none');
 });
+
+//home
+$('.btnEnter').click(function () {
+
+    window.location.href = 'home.html';
+});
