@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #1e94d8;
+    --primary-text-color: #ffffff;
+    --secundary-text-color: #000000;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    background-color: var(--secundary-text-color);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.divQuestions{
+    width: 100vw;
+    height: 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+.divSexo{
+    color: var(--primary-text-color);
+}
