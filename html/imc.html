@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="imc.css">
+    <link rel="stylesheet" href="../css/imc.css">
     <title>IMC</title>
 </head>
 <script>
@@ -35,25 +35,52 @@
         <header id="importHeader"></header>
         <div class="fakeHeader"></div>
 
-        <div class="divQuestions">
+        <div class="divBackground">
 
-            <div class="divSexo">
-                <label>Sexo:</label>
+            <div class="divQuestions">
 
-                <label for="sexo"><input type="radio" name="sexo" id="sexMasc" class="radio" value="Masculino">
-                    Masculino</label>
+                <div class="divSexo">
+                    <label for="sexo"><input type="radio" name="sexo" id="sexMasc" class="radio" value="Masculino">
+                        Masculino</label>
 
-                <label for="sexo"><input type="radio" name="sexo" id="sexFem" class="radio" value="Feminino">
-                    Feminino</label>
+                    <label for="sexo"><input type="radio" name="sexo" id="sexFem" class="radio" value="Feminino">
+                        Feminino</label>
+                </div>
+
+                <div class="divSplit">
+                    <div class="divForm">
+                        <label for="altura">Altura: <input type="text" name="altura" id="altura" class="input-form"
+                                placeholder="0.00"> cm</label>
+
+                        <label for="peso">Peso: <input type="text" name="peso" id="peso" class="input-form"
+                                placeholder="00.0"> kg</label>
+                    </div>
+                    <div class="divImgIMC">
+                        <img class="imgIMC" src="../images/unnamed.png" alt="">
+                    </div>
+                </div>
+
+                <div class="divButtom">
+                    <button class="btnCalc"><span>Calcular</span></button>
+                </div>
+
+                
+
             </div>
 
-            <input type="text" name="firstName" id="firstName" class="input-register" placeholder="Nome">
+            <div class="divResult">
 
-            <input type="text" name="lastName" id="lastName" class="input-register" placeholder="Sobrenome">
+                <div class="divHr">
+                    <hr class="hr">
+                </div>
 
-            <button class="btnEnter-register"><span>Calcular</span></button>
+                <p><span>35</span> Pontos</p>
+
+            </div>
 
         </div>
+
+
 
 
         <footer id="importFooter"></footer>
