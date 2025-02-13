@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/imc.css">
+    <link rel="shortcut icon" href="../images/icons8-gym-50.png" type="image/png">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>IMC</title>
 </head>
@@ -24,6 +25,10 @@
             .then(resp => resp.text())
             .then(data => {
                 document.getElementById('importFooter').innerHTML = data;
+
+                document.getElementById("atomo").addEventListener("click", function () {
+                    window.location.href = 'home.html';
+                });
             });
     }
 
@@ -40,32 +45,34 @@
 
             <div class="divQuestions">
 
-                <div class="divSexo">
-                    <label for="sexo"><input type="radio" name="sexo" id="sexMasc" class="radio" value="Masculino">
-                        Masculino</label>
+                <form id="formIMC">
 
-                    <label for="sexo"><input type="radio" name="sexo" id="sexFem" class="radio" value="Feminino">
-                        Feminino</label>
-                </div>
+                    <div class="divSexo">
+                        <label for="sexo"><input type="radio" name="sexo" id="sexMasc" class="radio" value="Masculino"
+                                checked>
+                            Masculino</label>
 
-                <div class="divSplit">
-                    <div class="divForm">
-                        <label for="altura">Altura: <input type="number" name="altura" id="altura" class="input-form"
-                                placeholder="00.0"> m</label>
-
-                        <label for="peso">Peso: <input type="number" name="peso" id="peso" class="input-form"
-                                placeholder="00.0"> kg</label>
+                        <label for="sexo"><input type="radio" name="sexo" id="sexFem" class="radio" value="Feminino">
+                            Feminino</label>
                     </div>
-                    <div class="divImgIMC">
-                        <img class="imgIMC" src="../images/unnamed.png" alt="">
+
+                    <div class="divSplit">
+                        <div class="divForm">
+                            <label for="altura">Altura: <input type="number" name="altura" id="altura"
+                                    class="input-form" placeholder="00.0" required step="0.01"> m</label>
+
+                            <label for="peso">Peso: <input type="number" name="peso" id="peso" class="input-form"
+                                    placeholder="00.0" required step="0.01"> kg</label>
+                        </div>
+                        <div class="divImgIMC">
+                            <img class="imgIMC" src="../images/unnamed.png" alt="">
+                        </div>
                     </div>
-                </div>
 
-                <div class="divButtom">
-                    <button class="btnCalc"><span>CALCULAR</span></button>
-                </div>
-
-
+                    <div class="divButtom">
+                        <button class="btnCalc" onclick="calcularIMC()"><span>CALCULAR</span></button>
+                    </div>
+                </form>
 
             </div>
 
@@ -75,10 +82,10 @@
                     <hr class="hr">
                 </div>
 
-                <p><span>0</span> Pontos</p>
+                <p><span id="pontos">0</span> Pontos</p>
 
                 <div class="barraCores">
-                    <div class="barraMagresa"></div>
+                    <div class="barraMagreza"></div>
                     <div class="barraNormal"></div>
                     <div class="barraExcesso"></div>
                     <div class="barraObesidade"></div>
@@ -86,18 +93,16 @@
                 </div>
 
                 <div class="marcadorIMC">
-                    <img src="../images/jogar.png" alt="">
+                    <img id="marcador" src="../images/jogar.png" alt="">
                 </div>
 
             </div>
 
             <div class="resultText">
-                <h1>Normal</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sapiente rerum quasi repellendus minus.
-                    Mollitia recusandae iusto maiores sed voluptatem distinctio deserunt qui, tenetur iure ducimus
-                    voluptatibus ipsum sequi quis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-                    illo sed quasi ea praesentium aspernatur harum ullam explicabo accusantium ipsum, vero expedita
-                    fugiat aliquam non, alias sequi.</p>
+                <h1 id="resultTitle"></h1>
+                <p id="resultDescription">
+
+                </p>
             </div>
 
         </div>

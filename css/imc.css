@@ -33,19 +33,24 @@ main {
     height: 40%;
     display: flex;
     flex-flow: column nowrap;
+    
+    & #formIMC{
+        width: 100%;
+        height: 100%;
 
-    & .divSexo {
-        height: 20%;
-        color: var(--secundary-text-color);
-        text-align: center;
-        align-content: center;
-
-        & .radio{
-            accent-color: var(--primary-color);
-        }
-
-        & #sexFem{
-            margin-left: 20px;
+        & .divSexo {
+            height: 20%;
+            color: var(--secundary-text-color);
+            text-align: center;
+            align-content: center;
+    
+            & .radio{
+                accent-color: var(--primary-color);
+            }
+    
+            & #sexFem{
+                margin-left: 20px;
+            }
         }
     }
 }
@@ -153,7 +158,7 @@ main {
         border-radius: 10px;
 
 
-        & .barraMagresa {
+        & .barraMagreza {
             width: 11%;
             height: 100%;
             background-color: rgb(74, 169, 233);
@@ -217,5 +222,6 @@ main {
     & p{
         width: 80%;
         height: 70%;
+        text-align: center;
     }
 }
