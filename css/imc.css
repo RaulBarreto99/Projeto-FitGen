@@ -33,13 +33,13 @@ main {
     height: 40%;
     display: flex;
     flex-flow: column nowrap;
-}
 
-.divSexo {
-    height: 20%;
-    color: var(--secundary-text-color);
-    text-align: center;
-    align-content: center;
+    & .divSexo {
+        height: 20%;
+        color: var(--secundary-text-color);
+        text-align: center;
+        align-content: center;
+    }
 }
 
 .divSplit {
@@ -49,86 +49,165 @@ main {
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+
+    & .divForm {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        padding-left: 15px;
+
+        & .input-form {
+            width: 70px;
+            height: 30px;
+            border-radius: 10px;
+            border: 1px solid black;
+            text-align: end;
+            padding: 5px;
+        }
+
+        & label>#peso {
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+    }
+
+    .divImgIMC {
+        width: 50%;
+        height: 100%;
+
+        & .imgIMC {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
 }
 
-.divForm {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    padding-left: 15px;
-}
 
-.input-form {
-    width: 70px;
-    height: 30px;
-    border-radius: 10px;
-    border: 1px solid black;
-    text-align: end;
-    padding: 5px;
-}
-
-.divForm>label>#peso {
-    margin-top: 20px;
-    margin-left: 5px;
-}
-
-.divImgIMC {
-    width: 50%;
-    height: 100%;
-}
-
-.imgIMC {
-    width: 100%;
-    height: 100%;
-}
 
 .divButtom {
     width: 100%;
     height: 20%;
     text-align: center;
     align-content: center;
-}
 
-.btnCalc {
-    width: 70%;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.205);
-    background-color: var(--primary-color);
-    color: var(--primary-text-color);
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
-    font-size: 19px;
-}
-
-.divHr {
-    width: 100%;
-    height: 15%;
-    text-align: -webkit-center;
-    align-content: center;
-}
-
-.hr {
-    width: 80%;
-    border: 1px solid rgba(0, 0, 0, 0.247)
+    & .btnCalc {
+        width: 70%;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.205);
+        background-color: var(--primary-color);
+        color: var(--primary-text-color);
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
+        font-size: 19px;
+    }
 }
 
 .divResult {
     width: 100%;
-    height: 30%;
+    height: 20%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+
+    & .divHr {
+        width: 100%;
+        height: 20%;
+        text-align: -webkit-center;
+        align-content: center;
+
+        & .hr {
+            width: 80%;
+            border: 1px solid rgba(0, 0, 0, 0.247)
+        }
+    }
+
+    & p {
+        font-size: 20px;
+        height: 30%;
+        align-content: center;
+
+        & span {
+            font-size: 40px;
+            font-weight: 800
+        }
+    }
+
+    & .barraCores {
+        width: 80%;
+        height: 19%;
+        margin-top: 20px;
+        display: flex;
+        flex-flow: row nowrap;
+        border: 1px solid black;
+        border-radius: 10px;
+
+
+        & .barraMagresa {
+            width: 11%;
+            height: 100%;
+            background-color: rgb(74, 169, 233);
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        & .barraNormal {
+            width: 19%;
+            height: 100%;
+            background-color: rgb(57, 226, 57);
+        }
+
+        & .barraExcesso {
+            width: 19%;
+            height: 100%;
+            background-color: yellow;
+        }
+
+        & .barraObesidade {
+            width: 23%;
+            height: 100%;
+            background-color: orange;
+        }
+
+        & .barraSuperObesidade {
+            width: 28%;
+            height: 100%;
+            background-color: rgb(211, 6, 6);
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+    }
+
+    & .marcadorIMC {
+        width: 80%;
+        height: 16%;
+
+        & img {
+            width: 20px;
+            rotate: 270deg;
+            /*Range 0px até 280px*/
+            margin-left: 140px;
+        }
+    }
+
 }
 
-.divResult>p {
-    font-size: 20px;
-    height: 20%;
-    align-content: center;
-}
+.resultText {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 
-.divResult>p>span {
-    font-size: 40px;
-    font-weight: 800
+    & h1{
+        font-size: 2em;
+        margin: 15px 0px;
+    }
+
+    & p{
+        width: 80%;
+        height: 70%;
+    }
 }
