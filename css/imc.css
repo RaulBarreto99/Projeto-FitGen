@@ -39,6 +39,14 @@ main {
         color: var(--secundary-text-color);
         text-align: center;
         align-content: center;
+
+        & .radio{
+            accent-color: var(--primary-color);
+        }
+
+        & #sexFem{
+            margin-left: 20px;
+        }
     }
 }
 
@@ -65,6 +73,7 @@ main {
             border: 1px solid black;
             text-align: end;
             padding: 5px;
+            font-size: 15px;
         }
 
         & label>#peso {
@@ -85,8 +94,6 @@ main {
 
 }
 
-
-
 .divButtom {
     width: 100%;
     height: 20%;
@@ -101,7 +108,8 @@ main {
         background-color: var(--primary-color);
         color: var(--primary-text-color);
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.274);
-        font-size: 19px;
+        font-size: 18px;
+        font-weight: 600;
     }
 }
 
