@@ -69,7 +69,7 @@ function calcularIMC(){
     document.getElementById('pontos').textContent = imc
     }
 
-    if (imc <= 20) {
+    if (imc <= 20 && peso) {
 
         document.getElementById('resultTitle').textContent = 'Magreza'
 
@@ -87,7 +87,7 @@ function calcularIMC(){
             document.getElementById('marcador').style.marginLeft = `${mappingMarcador[imcMarcador]}`;
         }
 
-    } else if (imc > 20 && imc < 25) {
+    } else if (imc > 20 && imc < 25 && peso) {
 
         document.getElementById('resultTitle').textContent = 'Normal'
 
@@ -101,7 +101,7 @@ function calcularIMC(){
 
         document.getElementById('marcador').style.marginLeft = `${mappingMarcador[imcMarcador]}`;
 
-    } else if (imc >= 25 && imc < 30) {
+    } else if (imc >= 25 && imc < 30 && peso) {
 
         document.getElementById('resultTitle').textContent = 'Excesso'
 
@@ -115,7 +115,7 @@ function calcularIMC(){
 
         document.getElementById('marcador').style.marginLeft = `${mappingMarcador[imcMarcador]}`;
 
-    } else if (imc >= 30 && imc < 36) {
+    } else if (imc >= 30 && imc < 36 && peso) {
 
         document.getElementById('resultTitle').textContent = 'Obesidade'
 
@@ -129,7 +129,7 @@ function calcularIMC(){
 
         document.getElementById('marcador').style.marginLeft = `${mappingMarcador[imcMarcador]}`;
 
-    } else if (imc >= 36) {
+    } else if (imc >= 36 && peso) {
 
         document.getElementById('resultTitle').textContent = 'Super Obesidade'
 

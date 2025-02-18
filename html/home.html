@@ -26,6 +26,10 @@
             .then(resp => resp.text())
             .then(data => {
                 document.getElementById('importFooter').innerHTML = data;
+
+                document.getElementById("imcF").addEventListener("click", function () {
+                    window.location.href = 'imc.html';
+                });
             });
     }
 

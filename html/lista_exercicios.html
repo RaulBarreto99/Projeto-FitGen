@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/lista_exercicios.css">
+    <link rel="shortcut icon" href="../images/icons8-gym-50.png" type="image/png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>IMC</title>
+</head>
+<script>
+    //script para adicionar o header
+    function loadHeader() {
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('importHeader').innerHTML = data;
+            });
+    }
+
+    //script para adicionar o footer
+    function loadFooter() {
+        fetch('footer.html')
+            .then(resp => resp.text())
+            .then(data => {
+                document.getElementById('importFooter').innerHTML = data;
+
+                document.getElementById("homeF").addEventListener("click", function () {
+                    window.location.href = 'home.html';
+                });
+            });
+    }
+
+    window.onload = loadHeader();
+    window.onload = loadFooter();
+</script>
+
+<body>
+    <header id="importHeader">
+    </header>
+    
+    <main>
+        <div class="divBackground">
+
+            <div class="divMusculos"><span class="muscTitle">Bíceps</span><span class="iconDrop">></span></div>
+
+            <div class="divMusculos"><span class="muscTitle">Tríceps</span><span class="iconDrop">></span></div>
+
+            <div class="divMusculos"><span class="muscTitle">Perna</span><span class="iconDrop">></span></div>
+
+            <div class="divMusculos"><span class="muscTitle">Ombro</span><span class="iconDrop">></span></div>
+
+            <div class="divMusculos"><span class="muscTitle">Peitoral</span><span class="iconDrop">></span></div>
+
+            <div class="divMusculos"><span class="muscTitle">Costas</span><span class="iconDrop">></span></div>
+
+            <div class="divMusculos"><span class="muscTitle">Pulso</span><span class="iconDrop">></span></div>
+
+        </div>
+    </main>
+
+    <footer id="importFooter"></footer>
+</body>
+
+</html>
+
+<script src="../js/lista_exercicios.js"></script>
