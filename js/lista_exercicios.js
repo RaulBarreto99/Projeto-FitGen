@@ -8,7 +8,7 @@ function open() {
 
             let teste = document.getElementById(`material-icons${i}`).style.rotate
 
-            if (teste == '0deg') {
+            if (teste == '0deg' || teste == '') {
 
                 document.getElementById(`material-icons${i}`).style.rotate = '180deg'
 
