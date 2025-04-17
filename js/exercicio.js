@@ -8,7 +8,7 @@ function open() {
     const page = params.get('page');    
 
     const base_exercicios = new dataBase()
-    base_exercicios.findFilter('type', page)
+    base_exercicios.filterExercicios('type', page)
 
     const exercicios = base_exercicios.base_exercicios;
 

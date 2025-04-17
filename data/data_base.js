@@ -15,12 +15,20 @@ class dataBase {
     
             { 'name': 'Rosca Alternada', 'type': 'biceps', 'posicao_inicial': 'Pegue um halter em cada mão, com as palmas das mãos voltadas para dentro (posição neutra). Fique em pé com os pés na largura dos ombros e os joelhos levemente flexionados. Mantenha os braços estendidos ao longo do corpo.Mantenha os ombros relaxados e as costas retas. Contraia o abdômen para estabilizar o tronco. Os cotovelos devem estar próximos ao corpo e ligeiramente flexionados.', 'execucao': 'Comece o movimento levantando um halter em direção ao ombro, girando a mão para que a palma fique voltada para cima durante a elevação. Mantenha o cotovelo imóvel e próximo ao corpo durante todo o movimento. Eleve o halter até que o bíceps esteja totalmente contraído e o halter próximo ao ombro. Abaixe o halter lentamente, estendendo o braço de volta à posição inicial. Repita o movimento com o outro braço, alternando os lados.', 'image': '../images/exercicios/Rosca Alternada.jpg' }
         ]
+        this.usuarios = [
+            {'id':1,'name':'Raul Barreto', 'login':'loginRaul','password':'senhaRaul','age':23,'sex':'M','photo':'../images/perfilRaul.jpg'}
+        ]
 
     }
 
-    findFilter(field, value){
+    filterExercicios(field, value){
 
         return this.base_exercicios.filter(register => register[field] === value);
+    }
+
+    filterUsers(field, value){
+
+        return this.usuarios.filter(register => register[field] === value);
     }
 
 }
