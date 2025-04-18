@@ -27,8 +27,20 @@
             .then(data => {
                 document.getElementById('importFooter').innerHTML = data;
 
+                document.getElementById("homeF").addEventListener("click", function () {
+                    window.location.href = 'home.html';
+                });
+
                 document.getElementById("imcF").addEventListener("click", function () {
                     window.location.href = 'imc.html';
+                });
+
+                document.getElementById("exerciseListF").addEventListener("click", function () {
+                    window.location.href = 'lista_exercicios.html';
+                });
+
+                document.getElementById("profileF").addEventListener("click", function () {
+                    window.location.href = 'profile.html';
                 });
             });
     }
