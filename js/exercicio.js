@@ -8,9 +8,7 @@ function open() {
     const page = params.get('page');    
 
     const base_exercicios = new dataBase()
-    base_exercicios.filterExercicios('type', page)
-
-    const exercicios = base_exercicios.base_exercicios;
+    const exercicios = base_exercicios.filterExercicios('type', page)
 
     document.getElementById("titleExercicio").innerHTML = page.charAt(0).toUpperCase() + page.slice(1).toLocaleLowerCase();
 
