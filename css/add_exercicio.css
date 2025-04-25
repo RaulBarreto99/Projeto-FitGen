@@ -79,9 +79,6 @@ main {
             & .infos {
                 width: 100%;
                 height: 100%;
-                display: flex;
-                flex-flow: column nowrap;
-                justify-content: space-around;
 
                 & p {
                     height: 10%;
@@ -98,30 +95,18 @@ main {
             height: 10%;
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
+            justify-content: flex-end;
             align-items: center;
 
-            & .btns {
-                display: flex;
-                flex-flow: row nowrap;
-                justify-content: space-around;
-                align-items: center;
-                border: 1px solid var(--secundary-text-color);
-                border-radius: 5px;
-                margin-right: 5px;
+            & .btnEdit{
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
                 margin-left: 5px;
-                padding-right: 5px;
-                padding-left: 5px;
+            }
 
-                & .btnEdit {
-                    width: 25px;
-                    height: 25px;
-                    margin-left: 5px;
-                }
-
-                & img {
-                    width: 100%;
-                }
+            & img{
+                width: 100%;
             }
         }
     }

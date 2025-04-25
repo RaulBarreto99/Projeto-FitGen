@@ -42,6 +42,10 @@
                 document.getElementById("profileF").addEventListener("click", function () {
                     window.location.href = 'profile.html';
                 });
+
+                document.getElementById("addexecF").addEventListener("click", function () {
+                    window.location.href = 'add_exercicio.html';
+                });
             });
     }
 
@@ -52,21 +56,33 @@
 <body>
     <header id="importHeader">
     </header>
-    
+
     <main>
 
         <div class="divBackground">
 
             <div class="divImg">
-                <img src="../images/perfilRaul.jpg">
+                <img id="imagem" src="">
             </div>
 
             <div class="divOpt">
 
-                <p>Atualizar informações</p>
-                <div class="btnEdit">
-                    <img src="../images/icons8-gym-50.png" alt="" srcset="">
+                <div class="btns">
+                    <p>Alterar Senha</p>
+                    <div class="btnEdit">
+                        <img src="../images/icons8-gym-50.png" alt="" srcset="">
+                    </div>
                 </div>
+
+                <div class="btns">
+                    <p>Atualizar informações</p>
+                    <div class="btnEdit">
+                        <img src="../images/icons8-gym-50.png" alt="" srcset="">
+                    </div>
+                </div>
+
+
+
 
             </div>
 
@@ -78,7 +94,6 @@
                     <p>Idade:</p>
                     <p>Sexo:</p>
                     <p>E-mail:</p>
-                    <p>Senha:</p>
                     <p>Altura:</p>
                     <p>Peso:</p>
                     <p>Series:</p>
@@ -86,21 +101,20 @@
                 </div>
 
                 <div class="infos">
-                    <p>Raul</p>
-                    <p>Barreto</p>
-                    <p>23</p>
-                    <p>Masculino</p>
-                    <p>loginRaul</p>
-                    <p>senhaRaul</p>
-                    <p>1.84</p>
-                    <p>93</p>
-                    <p>4</p>
-                    <p>8</p>
+                    <p id="nome"></p>
+                    <p id="sobrenome"></p>
+                    <p id="idade"></p>
+                    <p id="sexo"></p>
+                    <p id="email"></p>
+                    <p id="altura"></p>
+                    <p id="peso"></p>
+                    <p id="series"></p>
+                    <p id="reps"></p>
                 </div>
 
             </div>
 
-            
+
 
         </div>
 
@@ -112,3 +126,4 @@
 </html>
 
 <script src="../js/profile.js"></script>
+<script type="module" src="../js/profile.js"></script>
