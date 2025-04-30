@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="../images/icons8-gym-50.png" type="image/png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Profile</title>
+    <title>Adicionar Exercicio</title>
 </head>
 <script>
     //script para adicionar o header
@@ -56,55 +56,31 @@
 <body>
     <header id="importHeader">
     </header>
-    
+
     <main>
 
         <div class="divBackground">
 
-            <div class="divImg">
-                <img src="../images/perfilRaul.jpg">
-            </div>
+            <form action="submit" method="post" class="formQuestions">
 
-            <div class="divOpt">
+                <div class="divQuestions">
 
-                <p>Atualizar informações</p>
-                <div class="btnEdit">
-                    <img src="../images/icons8-gym-50.png" alt="" srcset="">
+                    <input type="text" name="name" id="name" class="input" placeholder="Nome do Exercício">
+
+                    <input type="text" name="name" id="name" class="input" placeholder="Músculo Impactado">
+
+                    <input type="text" name="name" id="name" class="input bigText" placeholder="Posição Inicial">
+
+                    <input type="text" name="name" id="name" class="input bigText" placeholder="Execução">
+
+                    <label class="file-label" for="image"><p>Escolha uma imagem</p><img src="../images/upload.png"></label>
+                    <input type="file" accept="image/*" name="image" id="image" class="file-input">
+
+                    <button type="submit" value="Adicionar" id="adicionar" class="btn-input">
+                        <span>Adicionar</span>
+                    </button>
                 </div>
-
-            </div>
-
-            <div class="divData">
-
-                <div class="fields">
-                    <p>Nome:</p>
-                    <p>Sobrenome:</p>
-                    <p>Idade:</p>
-                    <p>Sexo:</p>
-                    <p>E-mail:</p>
-                    <p>Senha:</p>
-                    <p>Altura:</p>
-                    <p>Peso:</p>
-                    <p>Series:</p>
-                    <p>Repetições:</p>
-                </div>
-
-                <div class="infos">
-                    <p>Raul</p>
-                    <p>Barreto</p>
-                    <p>23</p>
-                    <p>Masculino</p>
-                    <p>loginRaul</p>
-                    <p>senhaRaul</p>
-                    <p>1.84</p>
-                    <p>93</p>
-                    <p>4</p>
-                    <p>8</p>
-                </div>
-
-            </div>
-
-            
+            </form>
 
         </div>
 

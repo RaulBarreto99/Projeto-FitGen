@@ -37,76 +37,71 @@ main {
         justify-content: center;
         align-items: center;
 
-        & .divImg {
+        & .formQuestions {
             width: 100%;
-            height: 30%;
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: center;
-            align-items: center;
+            height: 100%;
 
-            & img {
-                width: 10em;
-                height: 10em;
-                border-radius: 100%;
-                border: 4px solid var(--primary-color);
-            }
-
-        }
-
-        & .divData {
-            width: 100%;
-            height: 60%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: center;
-            align-items: center;
-
-            & .fields {
+            & .divQuestions {
                 width: 100%;
                 height: 100%;
                 display: flex;
                 flex-flow: column nowrap;
-                justify-content: space-around;
+                justify-content: space-evenly;
+                align-items: center;
 
-                & p {
-                    height: 10%;
-                    align-content: center;
-                    padding-left: 10px;
+                & .input {
+                    width: 80%;
+                    height: 3.5em;
+                    border: 1px solid var(--secundary-text-color);
+                    border-radius: 10px;
+                    text-align: center;
+                    font-size: 14px;
                 }
-            }
 
-            & .infos {
-                width: 100%;
-                height: 100%;
-
-                & p {
-                    height: 10%;
-                    align-content: center;
-                    padding-right: 10px;
-                    text-align: end;
-                    color: #00000071;
+                & .bigText{
+                    height: 10em;
                 }
-            }
-        }
 
-        & .divOpt {
-            width: 100%;
-            height: 10%;
-            display: flex;
-            flex-flow: row nowrap;
-            justify-content: flex-end;
-            align-items: center;
+                & input::placeholder {
+                    font-size: 17px;
+                    font-style: italic;
+                    text-align: center;
+                }
 
-            & .btnEdit{
-                width: 25px;
-                height: 25px;
-                margin-right: 10px;
-                margin-left: 5px;
-            }
+                & .file-label {
+                    display: inline-block;
+                    padding: 20px 65px;
+                    background-color: rgb(184, 183, 183);
+                    color: var(--secundary-text-color);
+                    font-size: 17px;
+                    border-radius: 5px;
+                    transition: 0.3s;
+                    text-align: center;
 
-            & img{
-                width: 100%;
+                    & img{
+                        width: 25px;
+                        height: 25px;
+                        margin-top: 10px;
+                    }
+                }
+
+                & .file-input {
+                    display: none;
+                }
+
+                & .btn-input {
+                    width: 80%;
+                    height: 4em;
+                    background-color: var(--primary-color);
+                    color: var(--primary-text-color);
+                    border-radius: 10px;
+                    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.450);
+                    border: none;
+
+                    & span {
+                        font-size: 17px;
+                    }
+                }
             }
         }
     }
