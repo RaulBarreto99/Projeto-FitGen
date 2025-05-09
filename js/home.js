@@ -1,20 +1,20 @@
-$('header').click(function () {
+$('.gerTraining').click(function () {
     window.location.href = 'login.html';
 });
 
-$('.btnTrainingGenerate').click(function () {
-    window.location.href = 'login.html';
-});
-
-$('.btnIMC').click(function () {
-    window.location.href = 'imc.html';
-});
-
-$('.btnExerciseList').click(function () {
+$('.exerciseList').click(function () {
     window.location.href = 'lista_exercicios.html';
 });
 
-$('.btnAddTraining').click(function () {
+$('.addTraining').click(function () {
     window.location.href = 'add_exercicio.html';
+});
+
+$('.imc').click(function () {
+    window.location.href = 'imc.html';
+});
+
+$('.myTraining').click(function () {
+    window.location.href = 'login.html';
 });
 

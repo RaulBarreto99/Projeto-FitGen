@@ -11,15 +11,6 @@
 
 </head>
 <script>
-    //script para adicionar o header
-    function loadHeader() {
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('importHeader').innerHTML = data;
-            });
-    }
-
     //script para adicionar o footer
     function loadFooter() {
         fetch('footer.html')
@@ -49,104 +40,32 @@
             });
     }
 
-    window.onload = loadHeader();
     window.onload = loadFooter();
 </script>
 
 <body>
     <main>
 
-        <header id="importHeader"></header>
-        <div class="fakeHeader"></div>
-
-        <div class="divMessage">
-            <h1>BEM VINDO!</h1>
-            <p class="title">
-                Para iniciar clique em <b>Gerar Treino</b>.
-            </p>
-            <br>
-            <p class="text">
-                Lembre-se:
-                <br>
-                Você pode personalizar seu treino acessando as abas <b>Lista de Exercícios</b> e <b>Adicionar
-                    Exercício</b>!
-            </p>
+        <div class="title">
+            <p><span>FIT</span>GEN</p>
         </div>
 
-        <div class="divGenerate">
+        <div class="background">
 
-            <button class="btnTrainingGenerate">
-
-                <p class="btnTitle">
-                    Gerar Treino
-                </p>
-                <p class="btnText">
-                    Gere seu trenio aleatóriamente, escolhendo o músculo que deseja exercitar, o treino será baseado
-                    na Lista de exercícios e em seus exercicios personalizados.
-                </p>
-
-
-            </button>
-
+            <div class="gerTraining">
+            </div>
+            <div class="options exerciseList">
+            </div>
+            <div class="options addTraining">
+            </div>
+            <div class="options imc">
+            </div>
+            <div class="options myTraining">
+            </div>
         </div>
 
-        <div class="divOptions">
-
-            <button class="btnExerciseList btnOptions">
-
-                <p class="btnTitle">
-                    Lista de Exercícios
-                </p>
-                <p class="btnText">
-                    Lista de todos os exercícios disponiveis para gerar seus treinos.
-                </p>
 
 
-            </button>
-
-            <button class="btnIMC btnOptions">
-
-                <p class="btnTitle">
-                    IMC
-                </p>
-                <p class="btnText">
-                    Calcule seu IMC e tenha uma melhor visão sobre sua evolução.
-                </p>
-
-
-            </button>
-
-        </div>
-
-        <div class="divOptions">
-
-            <button class="btnAddTraining btnOptions">
-
-                <p class="btnTitle">
-                    Adicionar Exercício
-                </p>
-                <p class="btnText">
-                    Adicione um exercício que você curta, ele será adicionado em suas opções de treinos e avaliado
-                    para a lista de execicios global.
-                </p>
-
-
-            </button>
-
-            <button class="btnStopWatch btnOptions">
-
-                <p class="btnTitle">
-                    Cronometro
-                </p>
-                <p class="btnText">
-                    Controle com precisão seu tempo, utilizando de diferentes tipos de ritmos e também ritmos
-                    convêncionais.
-                </p>
-
-
-            </button>
-
-        </div>
 
         <footer id="importFooter"></footer>
 

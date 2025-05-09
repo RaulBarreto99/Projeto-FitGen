@@ -8,7 +8,8 @@ function open() {
         'Perna',
         'Ombro',
         'Costas',
-        'Peito'
+        'Peito',
+        'Abdômen'
     ]
 
     loadListaExercicios(lista_exercicios);

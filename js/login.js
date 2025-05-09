@@ -12,6 +12,12 @@ $('.popupClose').click(function () {
     $('.popupLogin').css('display', 'none');
 });
 
+//home
+$('.btnEnter').click(function () {
+
+    window.location.href = 'home.html';
+});
+
 //pop-up register
 $('#btnRegister').click(function () {
 
@@ -26,8 +32,9 @@ $('.popupClose-register').click(function () {
     $('.popupLogin-register').css('display', 'none');
 });
 
-//home
-$('.btnEnter').click(function () {
+$('.btnEnter-register').click(function () {
 
-    window.location.href = 'home.html';
+    $('.popup-overlay-register').css('display', 'none');
+    $('.popupLogin-register').css('display', 'none');
 });
+
