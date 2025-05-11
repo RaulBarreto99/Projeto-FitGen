@@ -1,0 +1,28 @@
+{
+  "name": "projeto-fitgen",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaulBarreto99/Projeto-FitGen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaulBarreto99/Projeto-FitGen/issues"
+  },
+  "homepage": "https://github.com/RaulBarreto99/Projeto-FitGen#readme",
+  "dependencies": {
+    "@prisma/client": "^6.7.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "prisma": "^6.7.0"
+  }
+}

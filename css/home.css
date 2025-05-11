@@ -66,8 +66,9 @@ main {
         }
 
         & .gerTraining {
-            width: 100%;
-            height: 23%;
+            width: 96%;
+            height: 20%;
+            margin-top: 8px;
             border-top-right-radius: 60px;
             border-top-left-radius: 60px;
             background-image: url(../images/homeGerTreino.png);
@@ -75,24 +76,28 @@ main {
             background-position: center;
             background-repeat: no-repeat;
         }
+
         & .exerciseList {
             background-image: url(../images/homeListaDeExercicios.png);
             background-size: cover;
             background-position: center 25%;
             background-repeat: no-repeat;
         }
+
         & .addTraining {
             background-image: url(../images/homeAddExercicio.png);
             background-size: cover;
             background-position: center 53%;
             background-repeat: no-repeat;
         }
+
         & .imc {
             background-image: url(../images/homeIMC.png);
             background-size: cover;
             background-position: center 86%;
             background-repeat: no-repeat;
         }
+
         & .myTraining {
             background-image: url(../images/homeMeusTreinos.png);
             background-size: cover;
