@@ -1,19 +1,19 @@
-import dataBase from "../data/data_base.js";
-
 window.onload = open();
 
 function open() {
 
     const params = new URLSearchParams(window.location.search);
-    const page = params.get('page');    
-
-    const base_exercicios = new dataBase()
-    const exercicios = base_exercicios.filterExercicios('type', page)
+    const page = params.get('page');
 
     document.getElementById("titleExercicio").innerHTML = page.charAt(0).toUpperCase() + page.slice(1).toLocaleLowerCase();
 
-    loadExercicios(exercicios);
-    insertDropbox(exercicios);
+    fetch(`http://localhost:3000/exercicios?type=${page}`)
+        .then(res => res.json())
+        .then(data => {
+            
+            loadExercicios(data);
+            insertDropbox(data);
+        })
 }
 
 function loadExercicios(exercicios) {
@@ -34,9 +34,9 @@ function loadExercicios(exercicios) {
 
         document.getElementById("divBackground").appendChild(divMusculos);
 
-        let posicaoInicial = (exercicios[i].posicao_inicial).split('.');
+        let posicaoInicial = (exercicios[i].initialPosition).split('.');
 
-        let execucao = (exercicios[i].execucao).split('.');
+        let execucao = (exercicios[i].execution).split('.');
 
         posicaoInicial.pop();
         execucao.pop();

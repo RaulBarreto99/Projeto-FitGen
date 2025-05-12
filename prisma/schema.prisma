@@ -16,4 +16,17 @@ model Exercicios{
   image String
 }
 
-
+model Users{
+  id    String @id @default(auto()) @map("_id") @db.ObjectId
+  name  String
+  lastname String
+  email String
+  password String
+  dateOfBirth DateTime
+  sex String
+  height Float?
+  weight Float?
+  series Int?
+  repetitions Int?
+  photo String?
+}
