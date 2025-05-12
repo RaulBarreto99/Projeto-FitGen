@@ -6,70 +6,71 @@ const prisma = new PrismaClient();
 const app = express();
 app.use(express.json());
 
-
-app.post('/usuarios', async (req, res) => {
-    await prisma.user.create({
-        data: {
-            email: req.body.email,
-            name: req.body.name,
-            age: req.body.age
-        }
-    });
-
-    res.status(201).json(req.body);
+app.listen(3000, () => {
+    console.log('Server is running on port 3000');
 });
 
-app.get('/usuarios', async (req, res) => {
-    let users = [];
+
+app.get('/exercicios', async (req, res) => {
+    let exercicios = [];
 
     if(req.query){
-        users = await prisma.user.findMany({
+        exercicios = await prisma.exercicios.findMany({
             where: {
                 name: req.query.name,
-                email: req.query.email,
-                age: !isNaN(req.query.age) ? parseInt(req.query.age) : undefined
+                type: req.query.type,
+                initialPosition: req.query.initialPosition,
+                execution: req.query.execution,
+                image: req.query.image
             }
         });
 
     }else{
-        users = await prisma.user.findMany()
+        exercicios = await prisma.exercicios.findMany()
     }
 
-    res.status(200).json(users);
+    res.status(200).json(exercicios);
 });
 
-app.put('/usuarios/:id', async (req, res) => {
-    await prisma.user.update({
-        where: {
-            id: req.params.id
-        },
+app.post('/exercicios', async (req, res) => {
+    await prisma.exercicios.create({
         data: {
-            email: req.body.email,
             name: req.body.name,
-            age: req.body.age
+            type: req.body.type,
+            initialPosition: req.body.initialPosition,
+            execution: req.body.execution,
+            image: req.body.image
         }
     });
 
     res.status(201).json(req.body);
 });
 
-app.delete('/usuarios/:id', async (req, res) => {
-    await prisma.user.delete({
+app.put('/exercicios/:id', async (req, res) => {
+    await prisma.exercicios.update({
+        where: {
+            id: req.params.id
+        },
+        data: {
+            name: req.body.name,
+            type: req.body.type,
+            initialPosition: req.body.initialPosition,
+            execution: req.body.execution,
+            image: req.body.image
+        }
+    });
+
+    res.status(201).json(req.body);
+});
+
+app.delete('/exercicios/:id', async (req, res) => {
+    await prisma.exercicios.delete({
         where: {
             id: req.params.id
         }
     });
 
-    res.status(204).json({message: 'User deleted successfully'});
+    res.status(204).json({message: 'Exercise deleted successfully'});
 });
 
 
-
-
-
-
-
-
-app.listen(3000, () => {
-    console.log('Server is running on port 3000');
-});

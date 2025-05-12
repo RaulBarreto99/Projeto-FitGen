@@ -7,11 +7,13 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model Exercicios{
   id    String @id @default(auto()) @map("_id") @db.ObjectId
-  email String @unique
   name  String
-  age   Int
+  type String
+  initialPosition String
+  execution String
+  image String
 }
 
 
